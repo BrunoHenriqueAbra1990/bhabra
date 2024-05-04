@@ -1,6 +1,6 @@
 <?php
     // Precisamos usar sessões, então você deve sempre iniciar sessões usando o código abaixo.
-    session_start();
+    //session_start();
     // Se o usuário não estiver logado redireciona para a página de login...
     if (!isset($_SESSION['nome'])) {
         header('Local: index.php');

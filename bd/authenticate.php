@@ -42,13 +42,13 @@
 				$_SESSION['status'] 					= $row_usuario['status'];
 
 				$usuario = $_SESSION['nome'];
-				header("Location: ../index.php");
+				header("Location: ../");
 				$_SESSION['msg'] = "$usuario Login bem sucedido!";
 				//echo $_SESSION['msg'];
 			}
 			else{
 				$_SESSION['msg'] = "Login e senha incorreto!";
-				header("Location: login.php");
+				header("Location: ../");
 				//echo mysqli_error($conn);
 			}
 		}

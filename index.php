@@ -35,7 +35,7 @@
                 <input type="password" name="password" placeholder="Senha" id="password" required class="col-md-10" />
                 <i class="fas fa-eye" id="olho"></i>
 
-                <input type="submit" value="Acessar.">
+                <input type="submit" value="Acessar">
             </form>
         </div>
     </body>

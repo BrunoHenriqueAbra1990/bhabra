@@ -24,19 +24,18 @@
                 }
             ?>
             <form action="bd/authenticate.php" method="post" id="div_form">
-                
-                    <label for="username" class="col-md-2">
-                        <i class="fas fa-user"></i>
-                    </label>
-                    <input type="text" name="username" placeholder="Usuário" id="username" required autofocus="autofocus" class="col-md-10" />
+                <label for="username" class="col-md-2">
+                    <i class="fas fa-user"></i>
+                </label>
+                <input type="text" name="username" placeholder="Usuário" id="username" required autofocus="autofocus" class="col-md-10" />
 
-                    <label for="password" class="col-md-2">
-                        <i class="fas fa-lock"></i>
-                    </label>
-                    <input type="password" name="password" placeholder="Senha" id="password" required class="col-md-10" />
-                    <i class="fas fa-eye" id="olho"></i>
+                <label for="password" class="col-md-2">
+                    <i class="fas fa-lock"></i>
+                </label>
+                <input type="password" name="password" placeholder="Senha" id="password" required class="col-md-10" />
+                <i class="fas fa-eye" id="olho"></i>
 
-                    <input type="submit" value="Acessar">
+                <input type="submit" value="Acessar.">
             </form>
         </div>
     </body>

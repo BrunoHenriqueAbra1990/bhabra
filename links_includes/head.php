@@ -12,7 +12,6 @@
     <link rel="stylesheet" href="estilos/bootstrap.css">
     
 
-
     <?php
         include "menu.php";
     ?>

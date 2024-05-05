@@ -1,3 +1,13 @@
+$(document).ready(function () {
+	menuPrincipal();
+});
+
+
+function menuPrincipal() {
+	$.post('processa/div_menu_principal.php', function(retorna){
+		$("#div_conteudo").html(retorna);
+	});
+}
 
 
 window.onload = function() {
@@ -7,6 +17,7 @@ window.onload = function() {
 function goHome() {
     location.href="./";
 }
+
 
 
 function Mudarestado(el) {

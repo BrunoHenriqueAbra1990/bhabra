@@ -67,8 +67,10 @@ body {
 .navtop div {
     display: flex;
     margin: 0 auto;
-    width: 1000px;
+    width: 100%;
     height: 100%;
+    padding-left: 10%;
+    padding-right: 2%;
 }
 .navtop div h1, .navtop div a {
     display: inline-flex;

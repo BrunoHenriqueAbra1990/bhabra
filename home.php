@@ -17,7 +17,7 @@
     <body class="loggedin">
         <nav class="navtop">
             <div>
-                <h1 onClick="goHome()" id="nome_empresa" >B. H. Abra - Desenvolvimento WEB</h1>
+                <h1 onClick="goHome()" id="nome_empresa" ><i class="fas fa-home"></i> &nbsp; B. H. Abra - Desenvolvimento WEB</h1>
                 <b id="bem_vindo">Bem-vindo, <?=$_SESSION['nome']?>!</b>
                 <a href="profile.php"><i class="fas fa-user-circle"></i>Perfil</a>
                 <a href="logout.php"><i class="fas fa-sign-out-alt"></i>Sair</a>
@@ -37,5 +37,5 @@
     </body>
 
     <script src="js/custom_home.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <!--<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>-->
 </html>

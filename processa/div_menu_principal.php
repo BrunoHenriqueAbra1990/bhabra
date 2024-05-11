@@ -8,7 +8,7 @@
     <div class="form-row col-md-12 menu_opcoes">
         <?php
             include "../bd/conectar.php"; 
-            $sql = "Select * FROM opcoes_menu	";
+            $sql = "Select * FROM opcoes_menu";
             $query = $con->query($sql);
             while ($dado = $query->fetch_assoc()) {
                 $nome_menu	= $dado['nome_menu'];

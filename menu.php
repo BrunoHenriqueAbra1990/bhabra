@@ -1,12 +1,12 @@
 
-    <!-- MENU -->
-    <style type="text/css">
-        @import "estilos/style_menu.css";  
-    </style>
-    <!-- MENU -->
+<!-- MENU -->
+<style type="text/css">
+    @import "estilos/style_menu.css";  
+</style>
+<!-- MENU -->
 
-    <script src="composer/jQuery-3.3.1/jquery-3.3.1.js"></script>
-    <script src="composer/ajax/jszip.min.js"></script>
+<script src="composer/jQuery-3.3.1/jquery-3.3.1.js"></script>
+<script src="composer/ajax/jszip.min.js"></script>
 
 <div class="wrapper">
 <!-- Sidebar  -->
@@ -27,37 +27,22 @@
                 </a>
             </li>
 
-            <li>
-                <a href=""><i class="fas fa-bars"></i>
-                    <b>Primeiro Menu</b>
-                </a>
-            </li>
-            <li>
-                <a href=""><i class="fas fa-bars"></i>
-                    <b>Segundo Menu</b>
-                </a>
-            </li>
-            <li>
-                <a href=""><i class="fas fa-bars"></i>
-                    <b>Terceiro Menu</b>
-                </a>
-            </li>
-            <li>
-                <a href=""><i class="fas fa-bars"></i>
-                    <b>Quarto Menu</b>
-                </a>
-            </li>
-            <li>
-                <a href=""><i class="fas fa-bars"></i>
-                    <b>Quinto Menu</b>
-                </a>
-            </li>
-            <li>
-                <a href=""><i class="fas fa-bars"></i>
-                    <b>Sexto Menu</b>
-                </a>
-            </li>
-
+            <?php
+                include "bd/conectar.php"; 
+                $sql = "Select * FROM opcoes_menu";
+                $query = $con->query($sql);
+                while ($dado = $query->fetch_assoc()) {
+                    $nome_menu	= $dado['nome_menu'];
+                    $id_opcoes_menu	= $dado['id_opcoes_menu'];
+            ?>
+                <li>
+                    <a href=""><i class="fas fa-bars"></i>
+                        <b><?php echo $nome_menu;?></b>
+                    </a>
+                </li>
+            <?php
+                }
+            ?>
         </ul>
     </nav>
 </div>

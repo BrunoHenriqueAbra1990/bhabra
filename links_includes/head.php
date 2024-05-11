@@ -4,7 +4,7 @@
     ?>
 
     <meta charset="utf-8">
-    <title>B. H. ABRA</title>
+    <title>B. H. Abra</title>
     <link rel="shortcut icon" href="img/B3.ico" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
     <link rel="stylesheet" href="estilos/style_login.css">
